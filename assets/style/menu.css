@@ -1,0 +1,39 @@
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color2);
+    padding-top: 30px;
+}
+
+.sidenav > nav > h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 0px 8px 20px 8px;
+}
+
+.sidenav > nav > ul {
+    list-style-type: none;
+}
+
+.sidenav > nav > ul > li > a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 100%;
+    padding: 10px 8px 10px 16px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.sidenav > nav > ul > li > a > i {
+    margin-right: 10px;
+}
