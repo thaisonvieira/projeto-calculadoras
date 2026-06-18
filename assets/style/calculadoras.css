@@ -1,0 +1,37 @@
+.rect h1 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+th, td {
+    padding: 10px 5px;
+}
+
+table > thead > tr > th {
+    color: #000;
+    text-align: left;
+    background-color: #eeeeee;
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+table > tbody > tr:hover {
+    background-color: #e0e0e0;
+}
+
+table > tbody > tr > td > a {
+    color: #333;
+    text-decoration: none;
+}
+
+table > tbody > tr > td > a:hover {
+    color: #000;
+    text-decoration: underline;
+}
