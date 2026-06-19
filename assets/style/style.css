@@ -78,6 +78,13 @@ main .container {
     margin: 0 auto;
 }
 
+.caminho-area {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    padding: 10px 40px 10px 40px;
+    background-color: #fff;
+}
+
 .rect {
     background-color: #fff;
     padding: 25px;
@@ -85,11 +92,15 @@ main .container {
     margin-top: 35px;
 }
 
-.caminho-area {
+.rect > h1 {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
-    padding: 10px 40px 10px 40px;
-    background-color: #fff;
+}
+
+.rect > .linha {
+    display: inline-block;
+    padding: 0.6px;
+    width: 100%;
+    background-color: #ccc;
 }
 
 footer {
