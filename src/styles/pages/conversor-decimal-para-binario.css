@@ -89,6 +89,7 @@
 
 .div-resultado output{
     display: inline-block;
+    min-height: 40px;
     width: 100%;
     padding: 10px;
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.212);
