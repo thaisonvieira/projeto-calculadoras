@@ -1,0 +1,20 @@
+input.modelo1{
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #818181;
+    margin-bottom: 20px;
+}
+
+input.modelo1:focus{
+    border: 2px solid #4169E1;
+}
+
+input.modelo2{
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}

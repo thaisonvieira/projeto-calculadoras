@@ -97,10 +97,23 @@ main .container {
 }
 
 .rect > .linha {
-    display: inline-block;
+    display: block;
     padding: 0.6px;
     width: 100%;
     background-color: #ccc;
+    margin: 10px 0px 30px 0px;
+}
+
+.rect > .paragrafo-descricao {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.rect > .calculadora-area {
+    padding: 20px 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
 }
 
 footer {

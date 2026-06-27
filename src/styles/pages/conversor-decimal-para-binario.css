@@ -1,0 +1,102 @@
+.box{
+    display: flex;
+    gap: 10px;
+}
+
+.box > aside {
+    width: 240px;
+    border: 1px solid #ccc;
+}
+
+.box > aside > ul {
+    list-style-type: none;
+}
+
+.box > aside > ul > li > a {
+    color: black;
+    font-size: 14px;
+    background-color: #fff;
+    text-decoration: none; 
+    display: inline-block;
+    width: 100%;
+    padding: 10px 5px;
+
+    &:hover{
+        color: #3377BB; 
+        background-color: #EEFFFF;
+    }
+}
+
+.box > aside > ul > li:not(:last-child) > a {
+    border-bottom: 1px dashed #ccc;
+} 
+
+.box > aside > ul > li > a.active {
+    color: #3377BB;
+    background-color: #EEFFFF;
+}
+
+#formulario {
+    flex-grow: 1;
+} 
+
+#formulario > input {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.212);
+    border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+#formulario > .btn-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#formulario > .btn-area > button {
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#formulario > .btn-area > button[type="submit"] {
+    color: #fff;
+    background-color: #3377BB;
+
+    &:hover {
+        background-color: #3e8edf;
+    }
+}
+
+#formulario > .btn-area > button[type="reset"] {
+    color: #fff;
+    background-color: var(--color3);
+
+    &:hover {
+        background-color: #364a63;
+    }
+}
+
+.div-resultado {
+    margin-top: 20px;
+}
+
+.div-resultado label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.div-resultado output{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.212);
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+
+
