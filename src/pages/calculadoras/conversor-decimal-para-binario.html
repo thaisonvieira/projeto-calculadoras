@@ -32,24 +32,14 @@
                 <span class="linha"></span>
                 <p class="paragrafo-descricao">No campo abaixo digite um número na base decimal para ser convertido para base binária.</p>
                 <div class="calculadora-area">
-                    <div class="box">
-                        <aside>
-                            <ul>
-                                <li><a href="#" class="active">Conversor decimal para binario</a></li>
-                                <li><a href="#">Exemplo 1</a></li>
-                                <li><a href="#">Exemplo 2</a></li>
-                                <li><a href="#">Exemplo 3</a></li>
-                            </ul>
-                        </aside>
-                        <form id="formulario">
-                            <label for="numero_em_decimal">Insira um número decimal:</label>
-                            <input type="text" class="modelo2" id="numero_em_decimal" inputmode="numeric" autocomplete="off" required>
-                            <div class="btn-area">
-                                <button type="submit">Converter</button>
-                                <button type="reset">Resetar</button>
-                            </div>
-                        </form>
-                    </div>
+                    <form id="formulario">
+                        <label for="numero_em_decimal">Insira um número decimal:</label>
+                        <input type="text" class="modelo2" id="numero_em_decimal" inputmode="numeric" autocomplete="off" required>
+                        <div class="btn-area">
+                            <button type="submit">Converter</button>
+                            <button type="reset">Resetar</button>
+                        </div>
+                    </form>
                     <div class="div-resultado">
                         <label for="resultado">Binário:</label>
                         <output form="formulario" id="resultado"></output>
