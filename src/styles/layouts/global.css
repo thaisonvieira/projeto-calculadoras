@@ -7,6 +7,8 @@
     --color1: #7EE081;
     --color2: #62A87C;
     --color3: #1B2838;
+    --bg-color: #e2f5e2;
+    --color-sidebar: #2C2C2C;
 }
 
 * {
@@ -18,12 +20,64 @@
 }
 
 body {
-    background-color: #e2f5e2;
+    background-color: var(--bg-color);
 }
 
-.sidenav {
+header {
+    display: none;
+    background-color: var(--color-sidebar);
+}
+
+/* (inicio) Estilo dos botões de abrir e fechar o menu lateral */
+
+#menu-button {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.bar1, .bar2, .bar3 {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 4px 0px;
+    background-color: #ffffff;
+}
+
+#close-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#close-button .bar1 {
+    transform: translate(0px, 3px) rotate(-45deg);
+    /* transform: translate(0px, 11px) rotate(-45deg); */
+}
+
+#close-button .bar2 {
+    transform: translate(0px, -3px) rotate(45deg);
+}
+
+/* (fim) Estilo dos botões de abrir e fechar o menu lateral */
+
+/* (inicio) Estilo do sidebar */
+
+.container-menu-icon {
+    padding: 10px;
+    background-color: #000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6bbd89;
+    padding: 25px 10px 25px 10px;
+}
+
+nav {
     height: 100%;
-    width: 260px;
+    width: 240px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -31,26 +85,24 @@ body {
     background-color: var(--color2);
 }
 
-.sidenav > nav > h1 {
-    font-size: 24px;
+nav h1 {
+    font-size: 20px;
     font-family: "Roboto Condensed", sans-serif;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-    padding: 25px 8px 25px 8px;
-    background-color: #6bbd89;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
 }
-.sidenav > nav > h1 > a {
+nav h1 a {
     color: #fff;
+    font: inherit;
     text-decoration: none;
     cursor: pointer;
 }
 
-.sidenav > nav > ul {
+nav > ul {
     list-style-type: none;
     margin: 25px 0px;
 }
 
-.sidenav > nav > ul > li > a {
+nav > ul > li > a {
     color: #fff;
     font-size: 16px;
     text-decoration: none;
@@ -65,17 +117,17 @@ body {
     }
 }
 
-.sidenav > nav > ul > li > a > i {
+nav > ul > li > a > i {
     margin-right: 10px;
 }
 
-main {
-    margin-left: 260px;
+.open {
+    display: block;
 }
 
 main .container {
-    max-width: 1020px;
-    margin: 0 auto;
+    width: 100%;
+    padding-inline: 15px;
 }
 
 .caminho-area {
@@ -127,4 +179,27 @@ footer {
 footer > address {
     font-style: normal;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    #sidebar {
+        display: block;
+    }
+
+    .container-menu-icon {
+        display: none;
+    }
+
+    #close-button {
+        display: none;
+    }
+
+    main {
+        margin-left: 240px;
+    }
+
+    main .container {
+        max-width: 1020px;
+        margin: 0 auto;
+    }
 }
