@@ -7,8 +7,9 @@
     --color1: #7EE081;
     --color2: #62A87C;
     --color3: #1B2838;
-    --bg-color: #e2f5e2;
-    --color-sidebar: #2C2C2C;
+    --bg-color: #EEEEEE;
+    --sidebar-bg-color: #303642;
+    --sidebar-text-color: #A8A7AC;
 }
 
 * {
@@ -21,11 +22,6 @@
 
 body {
     background-color: var(--bg-color);
-}
-
-header {
-    display: none;
-    background-color: var(--color-sidebar);
 }
 
 /* (inicio) Estilo dos botões de abrir e fechar o menu lateral */
@@ -71,8 +67,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #6bbd89;
     padding: 25px 10px 25px 10px;
+}
+
+.sidebar {
+    display: none;
 }
 
 nav {
@@ -82,7 +81,8 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--color2);
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
 }
 
 nav h1 {
@@ -103,7 +103,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    color: #fff;
+    color: inherit;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -113,7 +113,8 @@ nav > ul > li > a {
     padding: 15px 25px 15px 25px;
 
     &:hover {
-        background-color: #6bbd89;
+        color: var(--sidebar-bg-color);
+        background-color: var(--sidebar-text-color);
     }
 }
 
