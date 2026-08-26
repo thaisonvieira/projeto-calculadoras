@@ -1,0 +1,73 @@
+#formImc label,
+#formImc input,
+#formImc button {
+    display: block;
+}
+
+#formImc input, 
+#formImc button {
+    font: inherit;
+    border: none;
+    border-radius: 4px;
+}
+
+#formImc input {
+    width: 100%;
+    height: 2.5rem;
+    padding-inline: 10px;
+    border: 0.0625rem solid #cfcfcf;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label,
+.field legend {
+    line-height: 1.5rem;
+}
+
+.field-sexo {
+    border: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.field-sexo label {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    padding: 20px;
+    background: #e6e6e6;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#formImc .field-sexo input[name="sexo"] {
+    display: none;
+}
+
+#formImc .field-sexo input[value="F"]:checked ~ label[for='F']{
+    background-color: #FFB3C6;
+    border-color: #FFB3C6;
+}
+
+#formImc .field-sexo input[value="M"]:checked ~ label[for='M']{
+    background-color: #A2D2FF;
+    border-color: #A2D2FF;
+}
+
+#formImc .btn-area {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+#formImc .btn-area button {
+    background-color: #d7d7d7;
+    padding: 8px 24px;
+    cursor: pointer;
+}

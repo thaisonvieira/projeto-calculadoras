@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../styles/layouts/global.css">
+    <link rel="stylesheet" href="../../styles/pages/imc.css">
+    <!-- Scripts -->
+    <script src="../../scripts/global.js" defer></script>
+    <script src="../../scripts/imc.js" defer></script>
+</head>
+<body>
+    <div class="container-menu-icon">
+        <div id="menu-button">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+    </div>
+    <header id="sidebar">
+        <nav>
+            <div class="logo-container">
+                <h1>
+                    <a href="/index.html">Projeto Calculadoras</a>
+                </h1>
+                <div id="close-button">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../calculadoras.html"><i class="icon fa-solid fa-calculator"></i>Calculadoras</a></li>
+                <li><a href="#"><i class="icon fa-solid fa-phone"></i>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="caminho-area">Início | Calculadoras | Calculadora de IMC</div>
+            <div class="rect">
+                <h1>Calculadora de Índice de Massa Corpórea (IMC)</h1>
+                <span class="linha"></span>
+                <p class="paragrafo-descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia debitis rem, at, deleniti iusto accusamus officiis aut quisquam modi eos fuga assumenda placeat pariatur porro molestiae quos sint maiores? In.</p>
+                <div class="calculadora-area">
+                    <form id="formImc">
+                        <fieldset class="field field-sexo">
+                            <legend>Gênero:</legend>
+                            <input type="radio" name="sexo" id="F" value="F" required>
+                            <label for="F">Feminino</label>
+                            <input type="radio" name="sexo" id="M" value="M" required>
+                            <label for="M">Masculino</label>
+                        </fieldset>
+                        <div class="field">
+                            <label for="peso">Peso:</label>
+                            <input type="text" id="peso" placeholder="Ex: 70.5">
+                        </div>
+                        <div class="field">
+                            <label for="altura">Altura:</label>
+                            <input type="text" id="altura" placeholder="Ex: 1.65">
+                        </div>
+                        <div class="btn-area">
+                            <button type="submit" id="btn">Calcular</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </form>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Thaison Mendes Vieira</p>
+        </address>
+        <p>&copy; 2026 - Projeto Calculadoras</p>
+    </footer>
+</body>
+</html>
