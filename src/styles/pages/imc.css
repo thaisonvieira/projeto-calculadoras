@@ -71,3 +71,49 @@
     padding: 8px 24px;
     cursor: pointer;
 }
+
+div#resultado {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.classificacaoIMC {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    font-size: 17px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    transition: translateY(50px);
+}
+
+.abaixo-peso {
+    background-color: #DDEBFF;
+    color: #174A7C;
+}
+
+.peso-normal {
+    background-color: #DDF5E3;
+    color: #176B36;
+}
+
+.sobrepeso {
+    background-color: #FFF4CC;
+    color: #7A5A00;
+}
+
+.obesidade-grau-1 {
+    background-color: #FFE0B2;
+    color: #8A4B00;
+}
+
+.obesidade-grau-2 {
+    background-color: #FFC9C9;
+    color: #8B1E1E;
+}
+
+.obesidade-grau-3 {
+    background-color: #FFB3B3;
+    color: #6B0000;
+}

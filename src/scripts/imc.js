@@ -6,19 +6,12 @@ const calcularIMC = (altura, peso) => {
 }
 
 const classificarIMC = (imc) => {
-    if (imc < 18.5) {
-        return 'Abaixo do peso';
-    } else if (imc < 25) {
-        return 'Peso normal';
-    } else if (imc < 30) {
-        return 'Sobrepeso';
-    } else if (imc < 35) {
-        return 'Obesidade Grau I';
-    } else if (imc < 40) {
-        return 'Obesidade Grau II';
-    } else {
-        return 'Obesidade Grau III';
-    }
+    if (imc < 18.5) return 'Abaixo do peso';
+    else if (imc < 25) return 'Peso normal';
+    else if (imc < 30) return 'Sobrepeso';
+    else if (imc < 35) return 'Obesidade Grau 1';
+    else if (imc < 40) return 'Obesidade Grau 2';
+    else return 'Obesidade Grau 3';
 }
 
 const calcularPesoIdeal = (altura, sexo) => {
@@ -42,24 +35,29 @@ const calcularPesoMaximo = (altura) => {
 const gerarRelatorio = (imc, classificacao, pesoIdeal, pesoMinimo, pesoMaximo) => {
     const div = document.getElementById('resultado');
     div.textContent = '';
+
+    const titulo = document.createElement('h4');
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
     const p3 = document.createElement('p');
     const p4 = document.createElement('p');
-    const p5 = document.createElement('p');
-    const p6 = document.createElement('p');
+
+    const classificacaoFormatada = classificacao.toLowerCase().replaceAll(' ','-');
+    
+    titulo.textContent = 'RESULTADO:';
+    p1.textContent = `Seu IMC é de ${imc.toFixed(2)} - `;
+    p2.textContent = `${classificacao}`;
+    p3.textContent = `Seu peso ideal é entre ${pesoMinimo.toFixed(2)} a ${pesoMaximo.toFixed(2)} kg`;
+    p4.textContent = `Peso Ideal estimado: ${pesoIdeal.toFixed(2)} kg`;
+    p2.classList.add('classificacaoIMC');
+    p2.classList.add(classificacaoFormatada);
+    div.style.margin = '40px 0px 0px 0px';
+
+    div.appendChild(titulo);
     div.appendChild(p1);
-    div.appendChild(p2);
+    p1.appendChild(p2);
     div.appendChild(p3);
     div.appendChild(p4);
-    div.appendChild(p5);
-    div.appendChild(p6);
-    p1.textContent = 'RESULTADO:';
-    p2.textContent = `IMC: ${imc.toFixed(2)}.`;
-    p3.textContent = `Classificação: ${classificacao}.`;
-    p4.textContent = `Peso Mínimo: ${pesoMinimo.toFixed(2)}.`;
-    p5.textContent = `Peso Ideal estimado: ${pesoIdeal.toFixed(2)} kg.`;
-    p6.textContent = `Peso Máximo: ${pesoMaximo.toFixed(2)}.`;
 }
 
 
