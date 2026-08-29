@@ -15,7 +15,13 @@
     width: 100%;
     height: 2.5rem;
     padding-inline: 10px;
-    border: 0.0625rem solid #cfcfcf;
+    border: 0.0625rem solid #cfdeea;
+    background-color: #fff;
+}
+
+#formImc input[type='number']:focus,
+#formImc input[type='number']:hover {
+    border: 0.0625rem solid #1D89A0;
 }
 
 .field {
@@ -39,10 +45,11 @@
     flex-basis: 200px;
     text-align: center;
     padding: 20px;
-    background: #e6e6e6;
+    background: #DDEBFF;
+    border: 1px solid #cfdeea;
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    color: #272727;
 }
 
 #formImc .field-sexo input[name="sexo"] {
@@ -50,13 +57,15 @@
 }
 
 #formImc .field-sexo input[value="F"]:checked ~ label[for='F']{
-    background-color: #FFB3C6;
-    border-color: #FFB3C6;
+    border-color: #F3C1D3;
+    background-color: #F3C1D3;
+    color: 	#9D3D5C;
 }
 
 #formImc .field-sexo input[value="M"]:checked ~ label[for='M']{
-    background-color: #A2D2FF;
-    border-color: #A2D2FF;
+    border-color: #B8E3EC;
+    background-color: #B8E3EC;
+    color: 	#155E75;
 }
 
 #formImc .btn-area {
@@ -68,7 +77,6 @@
 
 #formImc .btn-area button {
     padding: 8px 24px;
-    font-weight: 300;
     cursor: pointer;
 }
 
@@ -79,7 +87,7 @@
 
 #formImc .btn-area button[type='reset'] {
     color: #fff;
-    background-color: #5A6268;
+    background-color: var(--btn-color-secundary);
 }
 
 div#resultado {
@@ -127,3 +135,34 @@ div#resultado {
     background-color: #FFB3B3;
     color: #6B0000;
 }
+
+table {
+    margin-top: 40px;
+    width: 100%;
+    border: 1px solid #cfdeea;
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    color: #272727;
+}
+
+
+table thead {
+    background-color: #F1F7FD;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F1F7FD;
+}
+
+
+

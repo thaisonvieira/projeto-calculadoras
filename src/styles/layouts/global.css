@@ -11,6 +11,7 @@
     --sidebar-bg-color: #1D89A0;
     --sidebar-text-color: #fff;
     --btn-color-primary: #F3AC1D;
+    --btn-color-secundary: #5A6268;
 }
 
 * {
@@ -166,8 +167,10 @@ main .container {
 
 .rect > .calculadora-area {
     padding: 20px 10px;
-    background-color: #f7f7f7;
+    background-color: #F1F7FD;
     border-radius: 10px;
+    border: 1px solid #cfdeea;
+    box-shadow: 0 6px 18px rgba(10, 44, 62, 0.1);
 }
 
 footer {
