@@ -7,9 +7,10 @@
     --color1: #7EE081;
     --color2: #62A87C;
     --color3: #1B2838;
-    --bg-color: #EEEEEE;
-    --sidebar-bg-color: #303642;
-    --sidebar-text-color: #A8A7AC;
+    --bg-color: #F8F9FA;
+    --sidebar-bg-color: #1D89A0;
+    --sidebar-text-color: #fff;
+    --btn-color-primary: #F3AC1D;
 }
 
 * {
@@ -113,8 +114,7 @@ nav > ul > li > a {
     padding: 15px 25px 15px 25px;
 
     &:hover {
-        color: var(--sidebar-bg-color);
-        background-color: var(--sidebar-text-color);
+        background-color: #219ab6;
     }
 }
 
@@ -161,6 +161,7 @@ main .container {
     font-size: 0.9em;
     line-height: 1.5em;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .rect > .calculadora-area {

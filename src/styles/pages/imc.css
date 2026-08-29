@@ -67,9 +67,19 @@
 }
 
 #formImc .btn-area button {
-    background-color: #d7d7d7;
     padding: 8px 24px;
+    font-weight: 300;
     cursor: pointer;
+}
+
+#formImc .btn-area button[type='submit'] {
+    color: #fff;
+    background-color: var(--btn-color-primary);
+}
+
+#formImc .btn-area button[type='reset'] {
+    color: #fff;
+    background-color: #5A6268;
 }
 
 div#resultado {
