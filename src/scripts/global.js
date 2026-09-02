@@ -1,11 +1,10 @@
-const menuButton = document.getElementById('menu-button');
-const closeButton = document.getElementById('close-button');
-const sidebar = document.getElementById('sidebar');
-menuButton.addEventListener('click', () => {
-    sidebar.classList.add('open');
-});
+function menu () {
+    const btn = document.getElementById('btn-menu');
+    btn.addEventListener('click', () => {
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('open');
+        btn.classList.toggle('nav__seta--seta-invertida');
+    });
+}
 
-closeButton.addEventListener('click', () => {
-    sidebar.classList.remove('open');
-});
-
+menu();

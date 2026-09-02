@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
+    <!-- Icones -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <!-- Estilos -->
     <link rel="stylesheet" href="../../styles/layouts/global.css">
     <link rel="stylesheet" href="../../styles/pages/imc.css">
@@ -12,37 +14,29 @@
     <script src="../../scripts/imc.js" defer></script>
 </head>
 <body>
-    <div class="container-menu-icon">
-        <div id="menu-button">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-        </div>
-    </div>
-    <header id="sidebar">
-        <nav>
-            <div class="logo-container">
-                <h1>
-                    <a href="/index.html">Projeto Calculadoras</a>
-                </h1>
-                <div id="close-button">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                </div>
-            </div>
-            <ul>
-                <li><a href="../calculadoras.html"><i class="icon fa-solid fa-calculator"></i>Calculadoras</a></li>
-                <li><a href="#"><i class="icon fa-solid fa-phone"></i>Contato</a></li>
+    <!--Navigation-->
+    <header>
+        <nav class="nav">
+            <h1 class="nav__h1">
+                Projeto Calculadoras
+                <span id="btn-menu" class="nav__seta material-symbols-outlined">keyboard_arrow_left</span>
+            </h1>
+            <ul class="nav__ul">
+                <li><a href="/index.html" class="nav__li">Início</a></li>
+                <li><a href="../mapa-do-site/calculadoras.html" class="nav__li">Calculadoras</a></li>
+                <li><a href="../mapa-do-site/contato.html" class="nav__li">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <!--Conteúdo principal da página-->
     <main>
         <div class="container">
             <div class="caminho-area">Início | Calculadoras | Calculadora de Índice de Massa Corpórea (IMC)</div>
             <div class="rect">
                 <h1>Calculadora de Índice de Massa Corpórea (IMC)</h1>
                 <span class="linha"></span>
-                <p class="paragrafo-descricao">O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS). Para adultos, um IMC entre 20 e 22 é o ideal.</p>
+                <p class="paragrafo-descricao">Preencha os campos abaixo corretamente.</p>
                 <div class="calculadora-area">
                     <form id="formImc">
                         <fieldset class="field field-sexo">
@@ -54,15 +48,14 @@
                         </fieldset>
                         <div class="field">
                             <label for="peso">Peso (kg):</label>
-                            <input type="number" id="peso" placeholder="Ex: 70.5" required>
+                            <input type="text" id="peso" placeholder="Ex: 70.5" required>
                         </div>
                         <div class="field">
                             <label for="altura">Altura (m):</label>
-                            <input type="number" id="altura" placeholder="Ex: 1.65" required>
+                            <input type="text" id="altura" placeholder="Ex: 1.65" required>
                         </div>
                         <div class="btn-area">
                             <button type="submit" id="btn">Calcular</button>
-                            <button type="reset">Limpar</button>
                         </div>
                     </form>
                     <div id="resultado"></div>

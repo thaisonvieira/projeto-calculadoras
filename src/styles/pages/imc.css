@@ -19,8 +19,7 @@
     background-color: #fff;
 }
 
-#formImc input[type='number']:focus,
-#formImc input[type='number']:hover {
+#formImc input[type='text']:focus {
     border: 0.0625rem solid #1D89A0;
 }
 
@@ -83,11 +82,6 @@
 #formImc .btn-area button[type='submit'] {
     color: #fff;
     background-color: var(--btn-color-primary);
-}
-
-#formImc .btn-area button[type='reset'] {
-    color: #fff;
-    background-color: var(--btn-color-secundary);
 }
 
 div#resultado {

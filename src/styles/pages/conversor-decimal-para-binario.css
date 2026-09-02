@@ -27,15 +27,6 @@
     }
 }
 
-#formulario > .btn-area > button[type="reset"] {
-    color: #fff;
-    background-color: var(--color3);
-
-    &:hover {
-        background-color: #364a63;
-    }
-}
-
 .div-resultado {
     margin-top: 20px;
 }
